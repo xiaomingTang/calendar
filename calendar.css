@@ -1,0 +1,95 @@
+*{
+	margin:0;
+	padding:0;
+}
+#calendar{
+	font-size:16px;
+	position:relative;
+	display:inline-block;
+	user-select: none;
+	-ms-user-select: none; /*IE10*/
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-khtml-user-select: none; /*早期浏览器*/
+}
+div.calendar_head,div.calendar_head select{
+	font-size:inherit;
+	text-align:center;
+}
+table{
+	border-collapse:collapse;
+}
+td{
+	width:2em;
+	height:2em;
+	line-height:2em;
+	text-align:center;
+	border:1px solid #eee;
+	color:#444;
+	background-color:#fff;
+	cursor:default;
+}
+td.week{
+	border-color:transparent;
+	background-color:#dee;
+}
+td.week.weekend{
+	color:#c23;
+}
+td.pre{
+	color:#ccc;
+}
+td.pre.weekend{
+	color:#fcd;
+}
+td.today{
+	color:#fff;
+	background-color:#c23;
+}
+td.future{
+	color:#444;
+}
+td.future:hover{
+	cursor:pointer;
+	background-color:#dee;
+}
+td.future.weekend{
+	color:#c23;
+}
+.pre-month{
+	position:relative;
+	display:inline-block;
+	top:4px;
+	margin-right:1.25em;
+	width:0;
+	height:0;
+	border-top:0.625em solid transparent;
+	border-right:0.625em solid #c23;
+	border-bottom:0.625em solid transparent;
+	border-left:0.625em solid transparent;
+	cursor:pointer;
+}
+.next-month{
+	position:relative;
+	display:inline-block;
+	top:4px;
+	margin-left:1.25em;
+	width:0;
+	height:0;
+	border-top:0.625em solid transparent;
+	border-right:0.625em solid transparent;
+	border-bottom:0.625em solid transparent;
+	border-left:0.625em solid #c23;
+	cursor:pointer;
+}
+
+td.select-start{
+	background-color:#7be;
+}
+
+ul,li{
+	list-style-type:none;
+}
+#calendar-type li{
+	margin-top:1em;
+}
