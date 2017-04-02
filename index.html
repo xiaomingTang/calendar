@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="tang" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<title>calendar</title>
+
+	<link rel="stylesheet" type="text/css" href="calendar.css" />
+</head>
+<body>
+	<div  id="calendar"></div>
+	<div>
+		<form id="calendar-type">
+			<ul>
+				<li>
+					<label><input name="is-selected" type="radio" value=0 />年月不可变</label><br />
+					<label><input name="is-selected" type="radio" value=1 checked="checked" />年月可变</label>
+				</li>
+				<li>
+					<label><input name="is-suitable" type="radio" value=0 />行数固定为6行</label><br />
+					<label><input name="is-suitable" type="radio" value=1 checked="checked" />行数根据日期自适应</label>
+				</li>
+				<li>
+					<label><input name="select-type" type="radio" value=0 />日期不可选</label><br />
+					<label><input name="select-type" type="radio" value=1 />可选单一日期</label><br />
+					<label><input name="select-type" type="radio" value=2 checked="checked" />可选时间段</label>
+				</li>
+			</ul>
+		</form>
+	</div>
+	<script type="text/javascript" src="calendar.js" ></script>
+</body>
+</html>
