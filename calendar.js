@@ -130,7 +130,7 @@ window.onload=function(){
 									else{
 										selectEnd=new Date(that.year,that.month,event.target.index);
 										if(selectEnd>that.selectStart){
-											alert("您选择的日期是："+that.selectStart.getFullYear()+"-"+that.selectStart.getMonth()+"-"+that.selectStart.getDate()+"到"+selectEnd.getFullYear()+"-"+selectEnd.getMonth()+"-"+selectEnd.getDate());
+											alert("您选择的日期是："+that.selectStart.getFullYear()+"-"+(that.selectStart.getMonth()+1)+"-"+that.selectStart.getDate()+"到"+selectEnd.getFullYear()+"-"+(selectEnd.getMonth()+1)+"-"+selectEnd.getDate());
 											that.selectStart=null;
 											that.delClass(document.getElementsByClassName("select-start")[0],"select-start");
 										}
